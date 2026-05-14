@@ -1,0 +1,33 @@
+# The Legacy by Sufi Perfume - Production Infrastructure Blueprint
+# Target: Railway.app | Nixpacks Runtime
+
+[phases.setup]
+pkgs = [
+  "python311", 
+  "nodejs_20", 
+  "gcc", 
+  "postgresql", 
+  "libjpeg", 
+  "zlib", 
+  "libpng", 
+  "pkg-config"
+]
+
+[phases.install]
+cmds = [
+  "npm install",
+  "pip install --upgrade pip",
+  "pip install -r backend/requirements.txt",
+  "cd auth_service_node && npm install",
+  "cd payment_service_node && npm install"
+]
+
+[phases.build]
+cmds = [
+  "npm run build:frontend"
+]
+
+[start]
+cmd = "node scripts/prod-runner.mjs"
+# Railway Readiness Check: Wait for the gateway to report healthy
+healthCheckPath = "/health"

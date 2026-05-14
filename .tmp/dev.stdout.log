@@ -1,0 +1,54 @@
+
+> sufi-perfumes-login@0.0.0 dev
+> node scripts/dev-runner.mjs
+
+[dev] Starting Flask backend with venv\Scripts\python.exe
+[backend]  * Serving Flask app 'backend.app'
+[backend]  * Debug mode: on
+[backend] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+[backend]  * Running on http://127.0.0.1:5000
+[backend] Press CTRL+C to quit
+[backend] 127.0.0.1 - - [29/Mar/2026 23:42:34] "GET /api/health HTTP/1.1" 200 -
+[dev] Backend ready at http://127.0.0.1:5000
+[dev] Starting Vite frontend...
+[frontend] > sufi-perfumes-login@0.0.0 dev:frontend
+[frontend] > vite --host 127.0.0.1 --port 5173
+[frontend]   [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m3381[22m[2m[0m ms[22m
+[frontend]   [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[backend] 127.0.0.1 - - [29/Mar/2026 23:43:02] "GET /api/health HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:46:22] "GET /api/health HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:46:49] "GET /api/products HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:46:49] "GET /api/products HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:46:49] "GET /api/products HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:46:49] "GET /api/products HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:47:40] "GET /api/products/2 HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:47:40] "GET /api/products/2 HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:51:12] "GET /api/health HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:51:53] "GET /api/health HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:16] "GET /api/products/2 HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:16] "GET /api/products/2 HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:28] "GET /api/health HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:28] "GET /api/health HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:41] "POST /api/admin/login HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:42] "GET /api/products?include_inactive=true HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:42] "GET /api/products?include_inactive=true HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:42] "GET /api/admin/overview HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:42] "GET /api/admin/overview HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:58] "GET /api/admin/overview HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:58] "GET /api/orders HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:52:58] "GET /api/orders HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:53:03] "GET /api/customers HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:53:03] "GET /api/admin/overview HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:53:03] "GET /api/customers HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:55:42] "GET /api/customers HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:55:42] "GET /api/admin/overview HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:55:43] "GET /api/customers HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:55:43] "GET /api/admin/overview HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:59:17] "GET /api/products?include_inactive=true HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:59:18] "GET /api/admin/overview HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [29/Mar/2026 23:59:18] "GET /api/products?include_inactive=true HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [30/Mar/2026 00:47:11] "GET /api/health HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [30/Mar/2026 00:48:03] "GET /api/products HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [30/Mar/2026 00:48:04] "GET /api/products HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [30/Mar/2026 00:48:04] "GET /api/products HTTP/1.1" 200 -
+[backend] 127.0.0.1 - - [30/Mar/2026 00:48:04] "GET /api/products HTTP/1.1" 200 -

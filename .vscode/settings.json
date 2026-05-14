@@ -1,0 +1,10 @@
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "tailwindCSS.emmetCompletions": true,
+  "python.defaultInterpreterPath": "c:\\Users\\HP\\Desktop\\Malik\\bussiness works\\sufi perfume\\.venv\\Scripts\\python.exe",
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}

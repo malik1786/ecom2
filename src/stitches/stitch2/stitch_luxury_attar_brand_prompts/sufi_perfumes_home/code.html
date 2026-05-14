@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sufi Perfumes - Cinematic Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#5a3a12",
+                        "outline": "#999080",
+                        "on-tertiary": "#472a03",
+                        "primary-fixed": "#ffdf9b",
+                        "surface-container-low": "#1c1b1b",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f",
+                        "primary-container": "#c9a961",
+                        "surface": "#131313",
+                        "tertiary": "#f1bf8c",
+                        "primary-fixed-dim": "#e4c278",
+                        "secondary-container": "#795900",
+                        "tertiary-fixed": "#ffdcbc",
+                        "on-surface-variant": "#d0c5b4",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#251a00",
+                        "on-primary-container": "#533d00",
+                        "on-secondary-fixed": "#261a00",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#d3a473",
+                        "primary": "#e6c479",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#ffdfa0",
+                        "secondary-fixed-dim": "#ecc165",
+                        "surface-dim": "#131313",
+                        "outline-variant": "#4d4639",
+                        "inverse-primary": "#745b1b",
+                        "on-tertiary-fixed": "#2c1700",
+                        "tertiary-fixed-dim": "#efbd8a",
+                        "surface-container-highest": "#353534",
+                        "inverse-on-surface": "#313030",
+                        "background": "#131313",
+                        "on-secondary": "#402d00",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-container-high": "#2a2a2a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#614018",
+                        "on-secondary-container": "#ffd375",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary": "#3f2e00",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary": "#ecc165",
+                        "on-primary-fixed-variant": "#5a4302",
+                        "surface-tint": "#e4c278"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "display-md": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-md": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .rim-light:hover {
+            box-shadow: inset 1px 1px 0px 0px rgba(139, 105, 20, 0.5), 0 0 15px 0px rgba(139, 105, 20, 0.2);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(to right, #e4c278, #c9a961);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/30 shadow-none">
+<div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto">
+<div class="flex items-center space-x-gutter">
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Shop</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Archives</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Perfumery</a>
+</div>
+<a class="font-display-md text-display-md text-primary tracking-tighter hover:scale-95 transition-transform duration-500" href="#">Sufi Perfumes</a>
+<div class="flex items-center space-x-gutter">
+<button aria-label="search" class="text-primary hover:text-primary transition-all duration-500">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button aria-label="person" class="text-on-surface-variant hover:text-primary transition-all duration-500">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button aria-label="shopping_bag" class="text-on-surface-variant hover:text-primary transition-all duration-500">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sufi Perfumes Hero" class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="Ultra-luxurious cinematic video still. Premium attar bottles resting on a slab of dark, veined marble. Dramatic golden rim lighting highlights the intricate cuts of the glass and the amber liquid inside. Droplets of condensation float mid-air against a pitch-black background, enveloped in wisps of fragrant smoke. The mood is opulent, mysterious, and highly atmospheric, perfectly aligning with a high-end minimalist dark mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFV7pCqj2sT5vJe9wYTBaMpWWdC-gkVvBKvZhQzKb_kXEBsupSWJotZHN9Qq1Fr82XaM0xvH_JKlWyh_MPxMyU6N85KXgjv-VRJuFKEs5sG9hdePcq-tbSHd5dk7uAtO5IYAUM7OZ8Pe16ZxV2L48HyBINsf-Xx6hxbCqVyvfHmzTTJV-c9rZGq_MPegL09esUUEnqc0e_WK-23oVZDQbpBCQY4tGnFgvjM1otRH9-clEtovxCl8xZRE0zgru1-o4wUnBdzCuyKF0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center gap-8 mt-20">
+<h1 class="font-display-lg text-display-lg text-primary text-gradient-gold">Scent for the Room You Leave Behind.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">An atelier of sacred scent. Unapologetically opulent, meticulously crafted.</p>
+<button class="mt-8 px-10 py-4 bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest hover:bg-gradient-to-r hover:from-[#8b6914] hover:to-primary-container hover:shadow-[0_0_15px_rgba(139,105,20,0.5)] transition-all duration-500">Explore Archives</button>
+</div>
+</header>
+<!-- Curated Collections - Horizontal Scroll -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Curated Collections</h2>
+<p class="font-body-md text-on-surface-variant">The essence of rare botanicals.</p>
+</div>
+<button class="font-label-caps text-label-caps text-primary border-b border-outline-variant pb-1 hover:border-primary transition-colors duration-300">View All</button>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-gutter pb-8 snap-x">
+<!-- Collection Item 1 -->
+<div class="flex-none w-[80vw] md:w-[45vw] snap-center group cursor-pointer">
+<div class="relative aspect-[16/9] bg-surface overflow-hidden mb-6 rim-light transition-all duration-500">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" data-alt="Close-up secondary photography of a Rose Attar Bloom collection. Velvety dark red rose petals scattered across a matte black slate surface. A single, heavy crystal flacon containing dark amber perfume catches a singular beam of warm, golden spotlight. Deep shadows emphasize the texture of the petals and the refractive quality of the glass, embodying a rich, cinematic dark mode atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY7kbllR8fdyBJeYOUPYlOkca1A5dZm5PJK2bnyQXBSX8_LocunUddFY5nPHcQQ6Q8vL4nfc0LcmEr4pXJ1oKtbiF38u0r5Opl8P6h_sTDxeV1JGUIab8XklsQ4x9MRgK7r_8Tus2rIICjMw8JlbkLlqqV-vlVXlygTdKgtL9Zw1_fOULAHtY0N-H0HhD0wYAysClVC0qDH1PSPjITrWdFFsGQeXpv9hPSOreb2kfL4Gl5R6JxNkGZxi2zYHnZObwi-kxiKVAW3JI"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Rose Attar Bloom</h3>
+<p class="font-body-md text-on-surface-variant max-w-sm">Damask rose absolute anchored in deep, resonant agarwood.</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors duration-300">arrow_forward</span>
+</div>
+</div>
+<!-- Collection Item 2 -->
+<div class="flex-none w-[80vw] md:w-[45vw] snap-center group cursor-pointer">
+<div class="relative aspect-[16/9] bg-surface overflow-hidden mb-6 rim-light transition-all duration-500">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" data-alt="Detailed macro photography of Amber Musk Luxury ingredients. Shimmering raw amber resin chunks and dark, textured musk pods resting on a bed of crushed charcoal. The scene is lit with striking rim lighting that makes the amber glow warmly from within against the pervasive dark background. The composition is highly editorial, minimalist, and conveys an intense sense of luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9dGK9uP0JiZlfvE9_3_Ofhx_ToHSHvPCTQTUAODJJ-gIYk2ouLAzr0K1RXBsAuWsRZVdFaNZjn34niZKDXJo3YlTAKwiae24-uSsd1dec1tIAQh2CGBB8jdHA5mU4rbwgDuIxNvs_f_2HaR3SFJO-kHEKzhLrrpNjiG4oycMZA_38BW0HzVMtRciN5TyfmeWsQocSOsHlCIxPJK5tIx8pplJj53NeuE8-HlEUK66F4z5VAFZnkDDKlCnHNVoSTCdqeAR1Vaa4TRc"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Amber Musk Luxury</h3>
+<p class="font-body-md text-on-surface-variant max-w-sm">A sensual, skin-close hum of fossilized amber and synthetic deer musk.</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors duration-300">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Grid (Bento Style) -->
+<section class="py-section-gap bg-background">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-16">Featured Vessels</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Featured -->
+<div class="md:col-span-8 group cursor-pointer h-[600px] relative bg-surface rim-light transition-all duration-500 overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-1000" data-alt="Single Attar Bottle premium photography card. A monolithic, heavy crystal perfume bottle with sharp geometric cuts stands alone on a smooth obsidian pedestal. A dramatic, single shaft of amber light slices through the pitch-black environment, illuminating the golden liquid inside the bottle and casting long, striking shadows. The overall aesthetic is extremely high-end, minimalist, and perfectly fits a moody gallery environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI3p2qNoStIsuP9XUiIs4XxxhKgMA5KNkKkNxaepsK1BuUXlekN8cN0LuyJeE9X3_Uzqnn3StiNf4B9jZivkfC1hfwddvVd5KGQxkhWpThI8dFFTJP_VAmZr7H46PPAc-fy_6MtAMeY2uwATltAMMfMWny7_ZbOhE-Rgs3Z30RNYI0ypHjsLnsHh_x4n3AHuD_kqt10POvAnCXTgVS0jFz9VuOUk9_l58hK4pn_Cl-mvmfuXKHg6NajlCTF9p_qcGeaes8DQEhWwE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
+<div>
+<span class="inline-block px-3 py-1 bg-surface-container-high/80 backdrop-blur-md text-tertiary-container font-label-caps text-label-caps uppercase mb-4 border border-outline-variant/30">Oud</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-2">Nocturne Absolute</h3>
+<p class="font-body-md text-on-surface-variant">The silence of midnight, captured in a dark glass vessel.</p>
+</div>
+<button class="h-12 w-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors bg-surface-container/50 backdrop-blur-sm">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Secondary Featured Stack -->
+<div class="md:col-span-4 flex flex-col gap-gutter h-[600px]">
+<div class="flex-1 group cursor-pointer relative bg-surface rim-light transition-all duration-500 overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" data-alt="A slender, elegant perfume flacon filled with pale gold liquid, positioned against a seamless dark charcoal background. The lighting is soft but directed, highlighting the metallic gold cap and the subtle texture of the glass. The image exudes quiet luxury and intellectual mystery, adhering strictly to a minimalist dark mode cinematic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOF8zPG6rBWxsy7LBVK357-h85ibNLerg_cFfTrIqLvfYyzypec60JgllKcJSa8A9i2Wd69Xd8ZyJxJ02zYb2SbH-vijA6-1BcN0ra7IPfnG6513oKvU0ftmv6ZdqvX7mzNxiGLXMo4Ciwg_ai5Bf2Qe0hDK9h2mbtyWRaOBeNWCBg4wtO0RFQXzqIGiSlyZ4ebnTIQLp8I1kgY3Y1hoyh9SZWYkOvYHVZ2SdO2e8FytOGVqf-Y4b8OfigY0jWnvFmdpoQlhRo40c"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-background/90 to-transparent">
+<span class="inline-block px-2 py-1 bg-surface-container-high/80 text-tertiary-container font-label-caps text-[10px] uppercase mb-2">Sandalwood</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Sacred Wood</h3>
+</div>
+</div>
+<div class="flex-1 group cursor-pointer relative bg-surface rim-light transition-all duration-500 overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" data-alt="Abstract macro shot of a perfume drop falling into dark water, creating ripples that catch a golden rim light. The background is pure, deep black. The focus is entirely on the fluid dynamics and the luminous amber hue of the droplet, conveying a sense of precious, concentrated essence in a high-end atelier setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOMTC_208Dbznu-fY6vzsrQlcQdTUezersIGOG0yOtVqG_538BHj-5wiAiGoql8Nmc0h_qR8kipJTtVOJwIF_yS9hBdKLrlJQGsnMZBQKvGVBY8bhvsAtdjmZZcf-GErQwXZL9i2mVtPNEhkVZCLgnwDEGO6fhTQQZdRBSAVLyF7iHeNLekROF7urD6cbsr-aLlt9w1VLAbeUR-M3cZp1IqSXJXYTYOCHxR_pDtGIyHbJgd2s665tLd1HBW__c4Y9oa8MYfFFe2TM"/>
+<div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-background/90 to-transparent">
+<span class="inline-block px-2 py-1 bg-surface-container-high/80 text-tertiary-container font-label-caps text-[10px] uppercase mb-2">Frankincense</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Temple Smoke</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-gutter bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col">
+<div class="font-display-lg text-display-lg text-primary mb-8">Sufi Perfumes</div>
+<p class="font-body-lg text-body-lg tracking-tight text-on-surface-variant max-w-sm mb-12">
+                    © 2024 SUFI PERFUMES. AN ATELIER OF SACRED SCENT.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300" href="#">The Collections</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300" href="#">Bespoke Perfumery</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300" href="#">Heritage Archives</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300" href="#">Concierge Services</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300" href="#">Private Appointments</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300" href="#">Shipping &amp; Returns</a>
+</div>
+</div>
+</footer>
+</body></html>

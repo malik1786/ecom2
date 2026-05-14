@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Oud Collection - Sufi Perfumes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#5a3a12",
+                        "outline": "#999080",
+                        "on-tertiary": "#472a03",
+                        "primary-fixed": "#ffdf9b",
+                        "surface-container-low": "#1c1b1b",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f",
+                        "primary-container": "#c9a961",
+                        "surface": "#131313",
+                        "tertiary": "#f1bf8c",
+                        "primary-fixed-dim": "#e4c278",
+                        "secondary-container": "#795900",
+                        "tertiary-fixed": "#ffdcbc",
+                        "on-surface-variant": "#d0c5b4",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#251a00",
+                        "on-primary-container": "#533d00",
+                        "on-secondary-fixed": "#261a00",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#d3a473",
+                        "primary": "#e6c479",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#ffdfa0",
+                        "secondary-fixed-dim": "#ecc165",
+                        "surface-dim": "#131313",
+                        "outline-variant": "#4d4639",
+                        "inverse-primary": "#745b1b",
+                        "on-tertiary-fixed": "#2c1700",
+                        "tertiary-fixed-dim": "#efbd8a",
+                        "surface-container-highest": "#353534",
+                        "inverse-on-surface": "#313030",
+                        "background": "#131313",
+                        "on-secondary": "#402d00",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-container-high": "#2a2a2a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#614018",
+                        "on-secondary-container": "#ffd375",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary": "#3f2e00",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary": "#ecc165",
+                        "on-primary-fixed-variant": "#5a4302",
+                        "surface-tint": "#e4c278"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "display-md": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-md": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/30 shadow-none">
+<div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="hidden md:flex space-x-gutter">
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Shop</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Archives</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Perfumery</a>
+</div>
+<a class="font-display-md text-display-md text-primary tracking-tighter" href="#">Sufi Perfumes</a>
+<div class="flex items-center space-x-unit">
+<button class="p-unit text-on-surface-variant hover:text-primary transition-all duration-500 hover:scale-95">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="p-unit text-on-surface-variant hover:text-primary transition-all duration-500 hover:scale-95">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="p-unit text-on-surface-variant hover:text-primary transition-all duration-500 hover:scale-95">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow pt-section-gap">
+<!-- Hero Section -->
+<section class="relative h-[819px] min-h-[600px] w-full flex items-center justify-center px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="absolute inset-0 z-0">
+<img alt="Oud Collection Hero" class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="A cinematic, ultra-high-end still life photograph of an ornate, crystal perfume bottle with a heavy gold cap resting on luxurious, deep black velvet. The scene is enveloped in profound darkness, illuminated only by a dramatic, warm amber spotlight that catches the sharp edges of the glass and the intricate details of the gold. The mood is opulent, mysterious, and intellectual, fitting a museum-gallery aesthetic for a sacred scent atelier. The rich golden liquid inside the bottle glows faintly against the impenetrable black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYrJXa_E4OBcrNgp8naXP77u1WsVGxDj0ZynvgbPmRM63MWdP7kuYS8SrtGXJrdjw_Ja1_Kyzw_OnqAliJHwNLRM0kukvVERKdf7PifS9nxJ75fUiRyABW6haJTzCPEk4jZyhw4X73eoWDh-cr3kEw-OnAaIg3mFmx408S1yPrQiyXoMGPAa02p_LHAdZtJrM0xdDg8aCuHcy3fh0ukrniUTS9q9x8pKZoJ6JFgtUdnuEBbkNXhN27VGk0A5TWFAbKV30Yl9FVJDc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center max-w-3xl">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-unit block">The Black Gold</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-gutter">Oud Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-gutter">
+                    A profound exploration of the world’s most precious resin. Dark, complex, and unyielding in its opulence.
+                </p>
+</div>
+</section>
+<!-- Narrative Section: The Alchemy of Oud -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative h-[600px] w-full border border-outline-variant/20 hover:border-primary/50 transition-colors duration-700">
+<img alt="The Alchemy of Oud" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="A moody, macro photograph of raw, aged agarwood (oud) chips resting on a textured slate surface. The lighting is harsh and directional, carving deep shadows into the wood's rugged texture and highlighting the glistening, dark resinous veins within. The color palette is restricted to profound blacks, deep woody browns, and flashes of amber. The composition is highly asymmetric and minimal, conveying a sense of ancient alchemy and intense concentration. The overall aesthetic is raw, powerful, and deeply luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTaVjNq0KLIDg2tcqLHWFUzlROytwIb2sdUQ5_TGvcKoXsUjd7s7MdPNjV7zF6vcXZd7Jb5dTMxh4qYuszvIuIMqq16zX1mIwgafQkcrjmC0p3ioKiK2BJtsG2DrewHTNeacvrM8eOGdxeKortRYI8E8f1J7q2Aw9iLWsIXL_dwD_FlnU_-b5CUQOMU3Hae-F-7DVQPC7ie5rhwOOuWE6fPrC11KfeIHDmhnH9CtCIogcMrjGUGFmUYZh6THvKUm7AqiBkwIirF0k"/>
+<!-- Rim Lighting Overlay -->
+<div class="absolute inset-0 border-l border-t border-primary/20 pointer-events-none"></div>
+</div>
+<div class="pl-0 md:pl-margin-desktop flex flex-col justify-center space-y-gutter">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-unit">The Alchemy of Oud</h2>
+<div class="w-12 h-px bg-primary/50"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Extracted from the heartwood of the Aquilaria tree only after it has been touched by a specific mold, Oud is nature’s ultimate act of transformation. Our atelier sources only the most ancient, resin-dense heartwood from the dense forests of Southeast Asia.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Each composition in this collection is a meditation on darkness and depth, designed to wear close to the skin and unfold over hours.
+                    </p>
+<div class="flex flex-wrap gap-unit pt-unit">
+<span class="px-3 py-1 bg-surface-container-high border border-outline-variant/30 text-tertiary-container font-label-caps text-label-caps">Assam Agarwood</span>
+<span class="px-3 py-1 bg-surface-container-high border border-outline-variant/30 text-tertiary-container font-label-caps text-label-caps">Dark Amber</span>
+<span class="px-3 py-1 bg-surface-container-high border border-outline-variant/30 text-tertiary-container font-label-caps text-label-caps">Smoked Woods</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Collection Showcase -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<div class="text-center mb-gutter pt-gutter border-t border-outline-variant/20">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Curated Varietals</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group flex flex-col space-y-unit cursor-pointer relative bg-surface-container-lowest p-unit hover:bg-surface-container-low transition-colors duration-500">
+<!-- Rim lighting effect on hover -->
+<div class="absolute inset-0 border border-transparent group-hover:border-primary/30 group-hover:shadow-[0_0_15px_rgba(139,105,20,0.1)] transition-all duration-500 pointer-events-none"></div>
+<div class="absolute inset-0 border-l border-t border-transparent group-hover:border-primary/50 transition-all duration-500 pointer-events-none"></div>
+<div class="relative h-[450px] w-full overflow-hidden bg-surface">
+<img alt="Oud Imperial" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 opacity-80 group-hover:opacity-100" data-alt="A minimalist, gallery-style photograph of a heavy, dark glass perfume bottle labeled 'Oud Imperial' standing alone against an abyss-like black background. A single, intense ray of warm amber light strikes the bottle's edge, creating a sharp rim light that reveals the textured glass and hints at the dense, dark liquid inside. The composition relies heavily on negative space, exuding a mysterious, unapologetically opulent atmosphere consistent with a high-end luxury brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk9eeaY_ZI2hg0bL4O1dHNLY1qOB5YJgy9rRD50RUNl6GFF4CXu4V-tQGSvfmkN8z1w_1VjVpYkOWvFhDtf7rRgwPHDaOxJaLwnJ-4oky6-9C53gv7uMWxax8CsbjQVlgrGMS4DOTJnrVYU_TN0EidxizidhlVyDrsh277yuHcUmXTolSbq6PnYKXsUhlWGEMxKIqiRRj7Z8NEec8CAi99oKG9FGXRJTZXmSq1dkj2HHdDY3w9cv39mHF6QHwy0xtyWFHr_VMq0W0"/>
+</div>
+<div class="pt-unit flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Oud Imperial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Aged Cambodian Agarwood, Rose, Black Pepper</p>
+</div>
+<span class="font-body-md text-body-md text-primary">$420</span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col space-y-unit cursor-pointer relative bg-surface-container-lowest p-unit hover:bg-surface-container-low transition-colors duration-500">
+<div class="absolute inset-0 border border-transparent group-hover:border-primary/30 group-hover:shadow-[0_0_15px_rgba(139,105,20,0.1)] transition-all duration-500 pointer-events-none"></div>
+<div class="absolute inset-0 border-l border-t border-transparent group-hover:border-primary/50 transition-all duration-500 pointer-events-none"></div>
+<div class="relative h-[450px] w-full overflow-hidden bg-surface">
+<img alt="Sacred Wood" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 opacity-80 group-hover:opacity-100" data-alt="A striking, high-contrast product shot of an elegant perfume bottle named 'Sacred Wood'. The bottle is crafted from smoked crystal with a matte gold cap, positioned asymmetrically on a dark, rough-hewn stone plinth. The background is pitch black. Directional rim lighting illuminates the left edge of the bottle and highlights the coarse texture of the stone beneath it. The overall mood is solemn, intellectual, and deeply luxurious, echoing the atmosphere of a nocturnal atelier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChxfgm-GIVqvlagMwG8xvc7sR-C5-E15dDmcG8XCsbgb3e3walrYDCYzuvath-FGgbK0n3bOt3HB0GOyH-M5fTBT3lgYh2AoVFKvulysxPfnk5K3py0W6rc6klNSCdtiyMb4knRrAVpmdqYtXFPAOjKi1uSb2LuzafeJ90ovRA_4L9Z7d2vkJnA3ZY_Ly-Ea-MPzPjx5HjMAw_4YJSDRbc32T1VWuz3XaxW7EaO7rK34357N4poRAEInUzdGl2rQImL-tmQI87Hnk"/>
+</div>
+<div class="pt-unit flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Sacred Wood</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Hindi Oud, Sandalwood, Saffron</p>
+</div>
+<span class="font-body-md text-body-md text-primary">$380</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col space-y-unit cursor-pointer relative bg-surface-container-lowest p-unit hover:bg-surface-container-low transition-colors duration-500">
+<div class="absolute inset-0 border border-transparent group-hover:border-primary/30 group-hover:shadow-[0_0_15px_rgba(139,105,20,0.1)] transition-all duration-500 pointer-events-none"></div>
+<div class="absolute inset-0 border-l border-t border-transparent group-hover:border-primary/50 transition-all duration-500 pointer-events-none"></div>
+<div class="relative h-[450px] w-full overflow-hidden bg-surface">
+<img alt="Midnight Resin" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 opacity-80 group-hover:opacity-100" data-alt="An atmospheric, cinematic photograph of a luxury perfume flacon labeled 'Midnight Resin'. The bottle sits on a reflective black surface, disappearing into deep shadows at the edges of the frame. A single, sharp beam of golden light pierces the darkness, refracting through the heavy glass base of the bottle and revealing glimpses of a dark, viscous amber liquid. The aesthetic is extremely minimalist, focusing on tonal layering, dramatic negative space, and the rich interplay of deepest blacks and molten gold." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj4mpF8pZo8u5V_ElFIsvKOU_VvJIW_ycGG9-lPKipUEUt7u8hY4BJCOVRUb6loAOX-iesZwKPAgPbnHO6e_lOT8EyGgrgQ-xGdtXYvQ_WJJghZGPSaMwJnqpV39FDxSea7JsZFEOYz2BTe5_JUx0i2su_WI7U1XfptosiSrQPGeCz2014n-_L0t0GkxPkQRJn4yETOaH5Hx86SJRoFNiAWkNpZpoTzlgtk6KXjfHstBrjwUQJYpEP4InIgmqGa8zlt9YARuGVrAw"/>
+</div>
+<div class="pt-unit flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Midnight Resin</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Primal Agarwood, Leather, Frankincense</p>
+</div>
+<span class="font-body-md text-body-md text-primary">$510</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-gutter border-t border-outline-variant/20 bg-surface-container-lowest text-primary shadow-none">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="flex flex-col col-span-1">
+<span class="font-display-lg text-display-lg text-primary mb-8 tracking-tighter">Sufi Perfumes</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant tracking-tight mb-gutter">
+                    © 2024 SUFI PERFUMES. AN ATELIER OF SACRED SCENT.
+                </p>
+</div>
+<div class="flex flex-col col-span-1 md:col-span-2 md:pl-margin-desktop">
+<nav class="grid grid-cols-2 gap-unit">
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">The Collections</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Bespoke Perfumery</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Heritage Archives</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Concierge Services</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Private Appointments</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Shipping &amp; Returns</a>
+</nav>
+</div>
+</div>
+</footer>
+</body></html>

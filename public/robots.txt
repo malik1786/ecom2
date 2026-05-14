@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Allow AI Search Crawlers (ChatGPT, Gemini, Claude)
+User-agent: OAIbot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /

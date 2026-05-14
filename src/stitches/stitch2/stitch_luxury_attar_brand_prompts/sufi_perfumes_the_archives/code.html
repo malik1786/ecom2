@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sufi Perfumes - Archives</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#5a3a12",
+                        "outline": "#999080",
+                        "on-tertiary": "#472a03",
+                        "primary-fixed": "#ffdf9b",
+                        "surface-container-low": "#1c1b1b",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f",
+                        "primary-container": "#c9a961",
+                        "surface": "#131313",
+                        "tertiary": "#f1bf8c",
+                        "primary-fixed-dim": "#e4c278",
+                        "secondary-container": "#795900",
+                        "tertiary-fixed": "#ffdcbc",
+                        "on-surface-variant": "#d0c5b4",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#251a00",
+                        "on-primary-container": "#533d00",
+                        "on-secondary-fixed": "#261a00",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#d3a473",
+                        "primary": "#e6c479",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#ffdfa0",
+                        "secondary-fixed-dim": "#ecc165",
+                        "surface-dim": "#131313",
+                        "outline-variant": "#4d4639",
+                        "inverse-primary": "#745b1b",
+                        "on-tertiary-fixed": "#2c1700",
+                        "tertiary-fixed-dim": "#efbd8a",
+                        "surface-container-highest": "#353534",
+                        "inverse-on-surface": "#313030",
+                        "background": "#131313",
+                        "on-secondary": "#402d00",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-container-high": "#2a2a2a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#614018",
+                        "on-secondary-container": "#ffd375",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary": "#3f2e00",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary": "#ecc165",
+                        "on-primary-fixed-variant": "#5a4302",
+                        "surface-tint": "#e4c278"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "display-md": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-md": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .rim-lighting {
+            box-shadow: inset 1px 1px 0px 0px rgba(139, 105, 20, 0.1);
+        }
+        .rim-lighting:hover {
+            box-shadow: inset 1px 1px 0px 0px rgba(139, 105, 20, 0.4), 0 0 15px rgba(201, 169, 97, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 border-b border-outline-variant/30 backdrop-blur-xl shadow-none">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<a class="font-display-md text-display-md text-primary tracking-tighter" href="#">Sufi Perfumes</a>
+<div class="hidden md:flex space-x-8">
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300 hover:text-primary transition-all duration-500" href="#">Shop</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-primary border-b border-primary pb-1 hover:text-primary transition-all duration-500" href="#">Archives</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300 hover:text-primary transition-all duration-500" href="#">Perfumery</a>
+</div>
+<div class="flex space-x-6 text-primary">
+<button class="hover:scale-95 transition-transform"><span class="material-symbols-outlined">search</span></button>
+<button class="hover:scale-95 transition-transform"><span class="material-symbols-outlined">person</span></button>
+<button class="hover:scale-95 transition-transform"><span class="material-symbols-outlined">shopping_bag</span></button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full pb-section-gap">
+<!-- Header -->
+<header class="text-center mb-gutter md:mb-section-gap">
+<h1 class="font-display-lg text-display-lg text-primary">Archives</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl mx-auto">A curated collection of our most sacred scents, preserved in liquid gold.</p>
+</header>
+<!-- Filters -->
+<div class="flex flex-wrap justify-center gap-4 mb-section-gap border-b border-outline-variant/20 pb-8">
+<button class="font-label-caps text-label-caps uppercase text-primary border-b border-primary pb-1">All Collections</button>
+<button class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1">Oud</button>
+<button class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1">Rose</button>
+<button class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1">Saffron</button>
+<button class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1">Jasmine</button>
+<button class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1">Musk</button>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group relative bg-surface-container-low rim-lighting transition-all duration-500 overflow-hidden">
+<div class="aspect-[3/4] w-full bg-surface-container-highest relative">
+<img alt="Oud Al Layl" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="A single, heavy crystal attar bottle filled with dark amber liquid resting on a black velvet pedestal. The lighting is cinematic and moody, with a single sharp spotlight catching the intricate gold filigree cap, creating a gleaming rim light. The background is pitch black, emphasizing the luxurious, minimalist museum-gallery aesthetic of the perfume." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb3x6KKcGUEKNVwoBTLD0ZTwDS451H1qbmFfedG8Cn_eGv3kZ1F6P-9DlKlMA5sT0y5kdlGqDlYY02lDhF-OEaD1EdBgTf8VnLZVl68G-2FeqeAobk5xk0nDOVH0nGNh3mFvAgtc7Q4gYmIyQ9_G1uKShBfpY_G9BxFomuGcIAqJSANbS85EG7A1cBKQ8cvrhhgAI0yPAWnRgDDKejzWHEDdqNcc626Uzcpr3nOFtIclm0uGu0WHpZ8pqvMhZUBlndQrL7xjJzoDM"/>
+<!-- Quick Shop Overlay -->
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="bg-primary-container text-surface px-8 py-3 font-label-caps text-label-caps uppercase tracking-widest hover:bg-gradient-to-r hover:from-primary-container hover:to-secondary-container transition-all duration-300">Quick Shop</button>
+</div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Oud Al Layl</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Aged Cambodian Oud, Black Musk</p>
+<span class="font-body-lg text-body-lg text-primary">$450</span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative bg-surface-container-low rim-lighting transition-all duration-500 overflow-hidden">
+<div class="aspect-[3/4] w-full bg-surface-container-highest relative">
+<img alt="Rose Damascus" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="A sleek, minimalist glass perfume bottle containing pale golden liquid, standing upright on a dark marble surface. Cinematic rim lighting illuminates the left edge of the bottle, separating it from the deep, pure black background. The overall mood is mysterious, high-end, and intellectual, fitting a luxury atelier aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5Mg9fVXIBkBRIDknKEjaS2p9uogVm4p4vUlMEOGKyfzrq-EnE1Go0J9EwsnBzsgocbMTIMIGds9FnEBVlCinrTinbg846QoTCTUmy8WfE1qpiaLk6AQErjuNV4JqfuatQedREDzNyxxj3WPNNA-VZ7q3daCdaQzmK7dKqebvGL1hogPNOyhWdq-T0ch2haIXQ5o9uXYExuxgqGeGIRxG58CYI6zTDcFFbX1d_hJZpwBWTvHlR7CpROU1NvTZEg1Fak3pM--kaSzg"/>
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="bg-primary-container text-surface px-8 py-3 font-label-caps text-label-caps uppercase tracking-widest hover:bg-gradient-to-r hover:from-primary-container hover:to-secondary-container transition-all duration-300">Quick Shop</button>
+</div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Rose Damascus</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Taif Rose, Sandalwood, Amber</p>
+<span class="font-body-lg text-body-lg text-primary">$380</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative bg-surface-container-low rim-lighting transition-all duration-500 overflow-hidden">
+<div class="aspect-[3/4] w-full bg-surface-container-highest relative">
+<img alt="Saffron Gold" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="A heavy, ornate perfume flacon emitting a subtle golden glow in a completely dark room. The bottle is the sole focus, resting on an invisible plane. Soft, directional amber lighting creates a dramatic contrast, emphasizing the texture of the glass and the opulent, sacred art vibe of the luxury fragrance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWdAz63K-zxaobsANXUoNJhLvduTEuE_F4bxBe-1nR1PHxz_71hKFOgcPemo2SJbZ3PeJBAJZYhd1JW5DG_CRi_b2iIbZWf7wotdscPP8Ynw0-s4JwPmPYmwDXzu5-R_96JQ8B10pte-PB05hLF6zTm7iUJkCKihimTZTNDgbmYZtTvpP4nyW8NZ_pXVq6EfF9ixneq1860xbYZwFQhG-93oOCqFFGvbcr1wm-L77gwPQ7I_wrobD7bLyk_LLSVn2b5R_rFIt6Ti0"/>
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="bg-primary-container text-surface px-8 py-3 font-label-caps text-label-caps uppercase tracking-widest hover:bg-gradient-to-r hover:from-primary-container hover:to-secondary-container transition-all duration-300">Quick Shop</button>
+</div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Saffron Gold</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Persian Saffron, Vanilla, Cedar</p>
+<span class="font-body-lg text-body-lg text-primary">$520</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-gutter border-t border-outline-variant/20 flat bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1">
+<h2 class="font-display-lg text-display-lg text-primary mb-8">Sufi Perfumes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">© 2024 SUFI PERFUMES. AN ATELIER OF SACRED SCENT.</p>
+</div>
+<div class="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col space-y-4">
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">The Collections</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Bespoke Perfumery</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Heritage Archives</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Concierge Services</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Private Appointments</a>
+<a class="font-body-lg text-body-lg tracking-tight text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-300" href="#">Shipping &amp; Returns</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,48 @@
+/* Responsive Overrides for Mobile and Tablets */
+
+/* Tablet and Smaller ( < 1024px ) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* Mobile Devices ( < 640px ) */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.75rem !important;
+    line-height: 1.1 !important;
+  }
+  
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  .glass-panel {
+    padding: 1.5rem !important;
+  }
+
+  /* Adjust Hero Spacing */
+  #hero {
+    padding-top: 2rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  /* Grid scaling */
+  .grid {
+    gap: 1.5rem !important;
+  }
+
+  /* Button Scaling */
+  .btn-gold, .btn-outline {
+    width: 100%;
+    padding: 1rem 1.5rem !important;
+  }
+}
+
+/* Very Small Devices ( < 380px ) */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 2.25rem !important;
+  }
+}

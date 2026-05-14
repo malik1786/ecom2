@@ -1,0 +1,18 @@
+[MASTER]
+ignore=.venv,node_modules,dist,src
+
+[FORMAT]
+max-line-length=120
+
+[MESSAGES CONTROL]
+disable=
+    broad-exception-caught,
+    global-statement,
+    invalid-name,
+    line-too-long,
+    missing-class-docstring,
+    missing-function-docstring,
+    missing-module-docstring,
+    too-many-lines,
+    trailing-whitespace
+

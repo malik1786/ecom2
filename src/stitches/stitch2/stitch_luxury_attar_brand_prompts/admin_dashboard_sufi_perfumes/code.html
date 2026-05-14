@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sufi Perfumes - Admin Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#5a3a12",
+                        "outline": "#999080",
+                        "on-tertiary": "#472a03",
+                        "primary-fixed": "#ffdf9b",
+                        "surface-container-low": "#1c1b1b",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f",
+                        "primary-container": "#c9a961",
+                        "surface": "#131313",
+                        "tertiary": "#f1bf8c",
+                        "primary-fixed-dim": "#e4c278",
+                        "secondary-container": "#795900",
+                        "tertiary-fixed": "#ffdcbc",
+                        "on-surface-variant": "#d0c5b4",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#251a00",
+                        "on-primary-container": "#533d00",
+                        "on-secondary-fixed": "#261a00",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#d3a473",
+                        "primary": "#e6c479",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#ffdfa0",
+                        "secondary-fixed-dim": "#ecc165",
+                        "surface-dim": "#131313",
+                        "outline-variant": "#4d4639",
+                        "inverse-primary": "#745b1b",
+                        "on-tertiary-fixed": "#2c1700",
+                        "tertiary-fixed-dim": "#efbd8a",
+                        "surface-container-highest": "#353534",
+                        "inverse-on-surface": "#313030",
+                        "background": "#131313",
+                        "on-secondary": "#402d00",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-container-high": "#2a2a2a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#614018",
+                        "on-secondary-container": "#ffd375",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary": "#3f2e00",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary": "#ecc165",
+                        "on-primary-fixed-variant": "#5a4302",
+                        "surface-tint": "#e4c278"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "display-md": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-md": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glow-amber-rim {
+            box-shadow: inset 1px 1px 0px 0px rgba(139, 105, 20, 0.3);
+        }
+        .glow-amber-hover:hover {
+            box-shadow: 0 0 15px rgba(139, 105, 20, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex selection:bg-primary-container selection:text-on-primary-container">
+<!-- Sidebar -->
+<aside class="w-64 bg-surface-container-lowest border-r border-outline-variant/20 flex flex-col hidden md:flex sticky top-0 h-screen shrink-0">
+<div class="p-8 pb-12 flex flex-col items-center border-b border-outline-variant/10">
+<span class="font-display-md text-display-md text-primary tracking-tighter mb-2">Sufi</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">Atelier Admin</span>
+</div>
+<nav class="flex-1 py-8 px-6 flex flex-col gap-2">
+<a class="flex items-center gap-4 px-4 py-3 rounded text-primary bg-surface-container-high border-l-2 border-primary glow-amber-rim transition-all duration-300" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-300 group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">inventory_2</span>
+<span class="font-body-md text-body-md">Products</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-300 group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">receipt_long</span>
+<span class="font-body-md text-body-md">Orders</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-300 group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">groups</span>
+<span class="font-body-md text-body-md">Customers</span>
+</a>
+<div class="mt-auto">
+<a class="flex items-center gap-4 px-4 py-3 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-300 group" href="#">
+<span class="material-symbols-outlined group-hover:rotate-90 transition-transform duration-500">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="bg-surface/70 backdrop-blur-xl border-b border-outline-variant/30 sticky top-0 z-40 px-margin-desktop py-6 flex justify-between items-center">
+<h1 class="font-headline-lg text-headline-lg text-on-background">Commerce Control</h1>
+<div class="flex items-center gap-8">
+<div class="relative hidden lg:block w-64">
+<span class="material-symbols-outlined absolute left-0 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/50 focus:border-primary focus:ring-0 pl-8 pb-2 text-on-surface placeholder:text-outline/50 font-body-md text-body-md transition-colors" placeholder="Search catalog..." type="text"/>
+</div>
+<div class="flex items-center gap-4 border-l border-outline-variant/30 pl-8">
+<button class="relative text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-primary rounded-full border border-surface"></span>
+</button>
+<div class="flex items-center gap-3">
+<img alt="Admin Profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant/50" data-alt="A close up, cinematic portrait of a sophisticated man with a neat beard, dramatic moody lighting in a dark minimalist studio setting. High end editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaOJ4O5iR809BYZd-aJO510Q4JYf346npySUVyWvmKVWpSDyIJGsJGCiilsSNcVQcq2vwGmNYj83kKdP8spU3mPPSLykPmuGv1Msx2Wp8qFBParl1nTgdr8S3IfAFPc9dSge8Pz8_D34M5KB0P2DTDEw9PWlglQw5tI0Aoy--xRcyZoReOvNKf1GeXX3xtGzvuQxHCzRJmQojEZI_pjHWctVX_H7k15nEcXR7KT3l84drHS_ZuCHMLezPjdEv-AGw2ZhYilPXtVXg"/>
+<div class="hidden sm:block">
+<p class="font-label-caps text-label-caps text-on-surface">Curator</p>
+<p class="font-body-md text-[13px] text-outline">Admin Access</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="p-margin-desktop max-w-container-max mx-auto w-full flex flex-col gap-16">
+<!-- Stats Overview Bento -->
+<section>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-low p-6 rounded-lg glow-amber-rim relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-4">Total Sales</p>
+<h3 class="font-display-md text-headline-lg text-primary mb-2">$42,850</h3>
+<p class="font-body-md text-sm text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                            +12.5% this week
+                        </p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg glow-amber-rim relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-4">Active Orders</p>
+<h3 class="font-display-md text-headline-lg text-on-background mb-2">148</h3>
+<p class="font-body-md text-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">inventory</span>
+                            32 awaiting fulfillment
+                        </p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg glow-amber-rim relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-4">Pending Requests</p>
+<h3 class="font-display-md text-headline-lg text-on-background mb-2">12</h3>
+<p class="font-body-md text-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">priority_high</span>
+                            Requires attention
+                        </p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg glow-amber-rim relative overflow-hidden group hover:bg-surface-container transition-colors border border-primary/20">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-4">Monthly Revenue</p>
+<h3 class="font-display-md text-headline-lg text-primary mb-2">$128,400</h3>
+<p class="font-body-md text-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">account_balance</span>
+                            Atelier projection met
+                        </p>
+</div>
+</div>
+</section>
+<!-- Inventory List Section -->
+<section class="flex flex-col gap-6">
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-2">Atelier Catalog</h2>
+<p class="font-body-md text-body-md text-outline">Manage bespoke fragrances and archives.</p>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-6 py-3 rounded uppercase tracking-widest hover:bg-primary transition-colors flex items-center gap-2 glow-amber-hover">
+<span class="material-symbols-outlined text-sm">add</span>
+                        New Scent
+                    </button>
+</div>
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/20 overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/30 bg-surface-container-low/50">
+<th class="py-4 px-6 font-label-caps text-label-caps text-outline uppercase tracking-widest">Masterpiece</th>
+<th class="py-4 px-6 font-label-caps text-label-caps text-outline uppercase tracking-widest">Scent Profile</th>
+<th class="py-4 px-6 font-label-caps text-label-caps text-outline uppercase tracking-widest">Category</th>
+<th class="py-4 px-6 font-label-caps text-label-caps text-outline uppercase tracking-widest">Stock</th>
+<th class="py-4 px-6 font-label-caps text-label-caps text-outline uppercase tracking-widest">Value</th>
+<th class="py-4 px-6 font-label-caps text-label-caps text-outline uppercase tracking-widest text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md">
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-6 flex items-center gap-4">
+<img alt="Oud Wood Perfume" class="w-12 h-16 object-cover border border-outline-variant/30 group-hover:border-primary/50 transition-colors" data-alt="A minimalist, high-end close up photograph of a sleek crystal perfume bottle filled with golden amber liquid. Dramatic dark background with sharp edge rim lighting highlighting the glass facets. Luxurious and cinematic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_mfRpDysr6LLsqupFnH2Wx6yAnoc2UK64QhmP3bLclcwdiS_pxEasmZSrriMPX_zSJfgOZrT6KKkmLzYQvCkPlTuDy9kCmrhRr22q0f-Em4MUvxiYpLLB6lJ7tyHSUQ2E4g0xiumv7_d2tQgmtTS8-sRhif1uwVfYyn_4B1MOu2tup9RkSZIlUGndmSBpGjRudzeyDuRzq9o2FoGsFAWHjHm8F1bNO__BqUsoX-qQdO127g_wDQdBUkSCeRj9J-gwDZZGWt4VzSQ"/>
+<div>
+<p class="font-semibold text-on-surface">Midnight Oud</p>
+<p class="text-sm text-outline">Ref: SP-001</p>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex gap-2">
+<span class="bg-surface px-2 py-1 text-xs text-tertiary border border-outline-variant/30 rounded-sm">Oud</span>
+<span class="bg-surface px-2 py-1 text-xs text-tertiary border border-outline-variant/30 rounded-sm">Rose</span>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Bespoke</td>
+<td class="py-4 px-6">
+<span class="text-primary-fixed-dim">14</span> Flacons
+                                </td>
+<td class="py-4 px-6 text-on-surface">$450.00</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-outline hover:text-primary transition-colors" title="Edit">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="text-outline hover:text-error transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-6 flex items-center gap-4">
+<img alt="Amber Perfume" class="w-12 h-16 object-cover border border-outline-variant/30 group-hover:border-primary/50 transition-colors" data-alt="A sophisticated macro shot of a geometric glass perfume bottle containing dark amber liquid. Placed on a black slate surface under dramatic, moody lighting with deep shadows and golden highlights. Minimalist luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZx0W0625838i3wtlaXEeYKh9BRtt3obmOF5OXjzVDGLafKKBVMj6PabYUHBGdKri7f6q2mW0weenrmkJgHgHi-Q1GzPeSsH5Dofh3V0X10TlkGFDTkjrmkycnkJQXbC5miasevkk0U_KJX8b5KZZtPNp4wW1MuUpxYpUeIrDRiRR05rPNZ10uJNcMX1TsE8KE9_lg_nYW8_ny1o9bb_Bh9KW6e7uJ4qTFSoBNVmk4w_yInlZZxhf0OhSs5mnkT49yz9pmNbvaJL0"/>
+<div>
+<p class="font-semibold text-on-surface">Sacred Amber</p>
+<p class="text-sm text-outline">Ref: SP-002</p>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex gap-2">
+<span class="bg-surface px-2 py-1 text-xs text-tertiary border border-outline-variant/30 rounded-sm">Amber</span>
+<span class="bg-surface px-2 py-1 text-xs text-tertiary border border-outline-variant/30 rounded-sm">Musk</span>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Heritage</td>
+<td class="py-4 px-6">
+<span class="text-outline">42</span> Flacons
+                                </td>
+<td class="py-4 px-6 text-on-surface">$280.00</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-outline hover:text-primary transition-colors" title="Edit">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="text-outline hover:text-error transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-4 px-6 flex items-center gap-4">
+<img alt="Sandalwood Perfume" class="w-12 h-16 object-cover border border-outline-variant/30 group-hover:border-primary/50 transition-colors" data-alt="An elegant, cinematic photograph of a tall, frosted glass perfume bottle standing against a pure black background. A single shaft of warm light strikes the bottle, creating a glowing ethereal effect. High-contrast minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACT2uZ499WbOMpqoxNaRHROU_FRA6nHusFRLXFUEh549PY5HlmjYtieiSwxvfWo-flNLVfGulbxsivjEl0CGZgBp66Is0LtdRDN5Mlj4sOQeRTi3CkKeN22ImzfmqRcPoMXBMfiy-cYb_ZfE4Tt9trenQaU8b89X68fn0VSqqcEzWLviBwL22NNkEvTcBqA2iRfY7EmW0UKcvKBldWTVPNxaNdJ8Vo7U6QvMr0BUVg-Zmj6MibcyDatfCzYT35IRNxB8Xg-FP57w0"/>
+<div>
+<p class="font-semibold text-on-surface">Desert Sandalwood</p>
+<p class="text-sm text-outline">Ref: SP-003</p>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex gap-2">
+<span class="bg-surface px-2 py-1 text-xs text-tertiary border border-outline-variant/30 rounded-sm">Wood</span>
+<span class="bg-surface px-2 py-1 text-xs text-tertiary border border-outline-variant/30 rounded-sm">Spices</span>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Collection</td>
+<td class="py-4 px-6">
+<span class="text-error font-semibold">2</span> Flacons
+                                </td>
+<td class="py-4 px-6 text-on-surface">$310.00</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-outline hover:text-primary transition-colors" title="Edit">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="text-outline hover:text-error transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="bg-surface-container py-4 px-6 flex justify-between items-center border-t border-outline-variant/20">
+<span class="font-body-md text-sm text-outline">Showing 1 to 3 of 45 masterpieces</span>
+<div class="flex gap-2">
+<button class="p-2 border border-outline-variant/30 rounded text-outline hover:text-primary hover:border-primary transition-colors disabled:opacity-50">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="p-2 border border-outline-variant/30 rounded text-outline hover:text-primary hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+</body></html>

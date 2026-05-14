@@ -1,0 +1,27 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "Auth Service for Sufi Perfumes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "nodemailer": "^6.9.5",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "redis": "^4.6.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
